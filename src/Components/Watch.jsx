@@ -7,12 +7,12 @@ const Watch = () => {
       <h1 className='2xl:text-4xl xl:text-3xl md:text-2xl font-semibold text-gray-800 mb-3 text-center'>
         Which Apple Watch is right for you?
       </h1>
-      <div className='w-full flex justify-around flex-col overflow-auto place-items-center md:flex-row lg:flex-row'>
+      <div className='w-full flex justify-around flex-col place-items-center  md:flex-col lg:flex-row overflow-auto lg:overflow-hidden'>
             {watchModels.map((watch, index) => (
-              <div className='w-60 h-[400px] flex flex-col justify-around group'>
+              <div className='w-60 h-[400px] flex flex-col justify-around group mt-4'>
                 <div key={index} className='w-full h-64 mb-4 overflow-hidden relative'>
-                 <img src={watch.imgs[0]} alt="watch" className='absolute w-full h-full object-center opacity-100 group-hover:opacity-0 transition duration-300 m-auto'/>
-                 <img src={watch.imgs[1]} alt="watch" className='absolute w-40 h-full object-center opacity-0 group-hover:opacity-100 transition duration-300 m-auto' />
+                 <img src={watch.imgs[0]} alt="watch" className='absolute w-40 h-40 object-center opacity-100 group-hover:opacity-0 transition duration-300 m-auto '/>
+                 <img src={watch.imgs[1]} alt="watch" className='absolute w-30 h-40 object-center opacity-0 group-hover:opacity-100 transition duration-300 m-auto ' />
                 </div>
             
             
@@ -24,7 +24,7 @@ const Watch = () => {
                 ))}
                 
             </div>
-            <button className='w-min text-sm mt-4 py-1 px-2 bg-blue-400 rounded-full text-white m-auto'>Shop</button>
+            <button className='w-min text-sm mt-2 py-1 px-2 bg-blue-400 rounded-full text-white m-auto'>Shop</button>
         </div>
         ))}
       </div>
