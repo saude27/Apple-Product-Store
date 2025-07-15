@@ -5,7 +5,7 @@ import Home from './Components/Home'
 import Iphone from './Components/Iphone'
 import Macbook from './Components/Macbook'
 import Watch from './Components/Watch'
-import IMac from './Components/iMac'
+import IMac from './Components/IMac'
 import PageTransition from './Components/PageTransition'
 
 const App = () => {
